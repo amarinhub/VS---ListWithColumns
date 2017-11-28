@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{d08f12fc-bcfd-425e-a325-a15ffcca8394}"
+       Name="Movie_Price"
+       DisplayName="Price"
+       Type="Currency"
+       Required="FALSE"
+       Group="Movie Site Columns">
+  </Field>
+</Elements>

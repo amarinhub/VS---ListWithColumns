@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{aafdf98b-0a84-47b9-ba0e-99b353cb7554}"
+       Name="Movie_Category"
+       DisplayName="Category"
+       Type="Choice"
+       Format="Dropdown"
+       Required="FALSE"
+       Group="Movie Site Columns">
+    <CHOICES>
+      <CHOICE>Action</CHOICE>
+      <CHOICE>Crime</CHOICE>
+      <CHOICE>Drama</CHOICE>
+      <CHOICE>Fiction</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

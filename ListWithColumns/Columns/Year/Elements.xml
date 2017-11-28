@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{96d7abce-80c3-42c4-976c-171dab29c04e}"
+       Name="Movie_Year"
+       DisplayName="Year"
+       Description="Movie year"
+       Type="Choice"
+       Format="Dropdown"
+       Required="FALSE"
+       Group="Movie Site Columns">
+    <CHOICES>
+      <CHOICE>2010</CHOICE>
+      <CHOICE>2011</CHOICE>
+      <CHOICE>2012</CHOICE>
+      <CHOICE>2013</CHOICE>
+      <CHOICE>2014</CHOICE>
+      <CHOICE>2015</CHOICE>
+      <CHOICE>2016</CHOICE>
+      <CHOICE>2017</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

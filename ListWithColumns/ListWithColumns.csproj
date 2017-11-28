@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E317251D-198E-4621-B7A9-CA01A21C9B6E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ListWithColumns</RootNamespace>
+    <AssemblyName>ListWithColumns</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Features\List Feature\List Feature.EventReceiver.cs">
+      <DependentUpon>List Feature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\MasterPage Feature\MasterPage Feature.EventReceiver.cs">
+      <DependentUpon>MasterPage Feature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebParts\VisualWebPartMovie\VisualWebPartMovie.cs" />
+    <Compile Include="WebParts\VisualWebPartMovie\VisualWebPartMovieUserControl.ascx.cs">
+      <DependentUpon>VisualWebPartMovieUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\VisualWebPartMovie\VisualWebPartMovieUserControl.ascx.designer.cs">
+      <DependentUpon>VisualWebPartMovieUserControl.ascx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Columns\Category\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7ac5ece4-5864-4069-becd-b1be25f0a0ab}</SharePointProjectItemId>
+    </None>
+    <None Include="Columns\Description\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3990f0ee-f37d-4875-978a-1c71f1f91eb6}</SharePointProjectItemId>
+    </None>
+    <None Include="Columns\Name\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c4811611-b7f6-4f01-9777-8e2c046c0563}</SharePointProjectItemId>
+    </None>
+    <None Include="Columns\Price\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ba9aa741-0579-4e9a-95c8-bca45d3269e4}</SharePointProjectItemId>
+    </None>
+    <None Include="Columns\Year\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dfd88c3b-c3b9-440b-9e40-33ec9ffb17d1}</SharePointProjectItemId>
+    </None>
+    <None Include="Content Types\Movie\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{594864ba-c190-426e-8e61-484dc1676229}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\WebPart\WebPart.feature">
+      <FeatureId>{038fd430-ce9b-406d-a207-1f9e9a40ff4e}</FeatureId>
+    </None>
+    <None Include="Features\MasterPage Feature\MasterPage Feature.feature">
+      <FeatureId>{65a90627-ba1e-4653-b4b3-291d52442318}</FeatureId>
+    </None>
+    <None Include="Features\List Feature\List Feature.feature">
+      <FeatureId>{205132e4-780a-4bf5-a3cb-12ce86e84bbe}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1c4f75e0-9d32-49fc-8d56-f36ee43a529a}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Movies\MoviesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c93e7126-ce60-47d1-b8bc-b1e639fd1adc}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Movies\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2343fab4-1046-4cf8-b6fe-59ab257da473}</SharePointProjectItemId>
+    </None>
+    <None Include="Masterpages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c75464a0-e96b-4a57-b9de-8d0ea7015dcd}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{876d5a7b-6a38-498a-8f47-c902b7ef3017}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="WebParts\VisualWebPartMovie\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5295867f-aa93-4ffa-9980-640fa49738e1}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\VisualWebPartMovie\VisualWebPartMovie.webpart" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Columns\Category\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Columns\Description\Elements.xml" />
+    <Content Include="Columns\Name\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Columns\Price\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Columns\Year\Elements.xml" />
+    <Content Include="Content Types\Movie\Elements.xml" />
+    <Content Include="Features\WebPart\WebPart.Template.xml">
+      <DependentUpon>WebPart.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\MasterPage Feature\MasterPage Feature.Template.xml">
+      <DependentUpon>MasterPage Feature.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\List Feature\List Feature.Template.xml">
+      <DependentUpon>List Feature.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\ListWithColumns\css\jquery.dataTables.min.css" />
+    <Content Include="Layouts\ListWithColumns\css\visualwebpart.css" />
+    <Content Include="Layouts\ListWithColumns\js\jquery-1.12.4.js" />
+    <Content Include="Layouts\ListWithColumns\js\jquery.dataTables.min.js" />
+    <Content Include="Layouts\ListWithColumns\js\jquery.min.js" />
+    <Content Include="Layouts\ListWithColumns\js\visualwebpart.js" />
+    <Content Include="Lists\Movies\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\Movies\MoviesInstance\Elements.xml" />
+    <Content Include="Lists\Movies\Schema.xml" />
+    <Content Include="Masterpages\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="readme.txt" />
+    <Content Include="WebParts\VisualWebPartMovie\Elements.xml" />
+    <Content Include="WebParts\VisualWebPartMovie\VisualWebPartMovieUserControl.ascx" />
+    <None Include="Masterpages\Demo.master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

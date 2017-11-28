@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x010064F5D9F658F74D30B3A445F46D55D108" Name="Movie" Group="Custom Content Types" Description="Movie Content Type" Inherits="FALSE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{b43601ff-ff8c-463c-800c-9e86716b3dd5}" DisplayName="Name" Required="FALSE" Name="Movie_Name" />
+      <FieldRef ID="{aafdf98b-0a84-47b9-ba0e-99b353cb7554}" DisplayName="Category" Required="FALSE" Name="Movie_Category" Format="Dropdown" />
+      <FieldRef ID="{fe94a4d0-ab9e-4ad7-be4c-63538a82117b}" DisplayName="Description" Required="FALSE" Name="Movie_Description" />
+      <FieldRef ID="{96d7abce-80c3-42c4-976c-171dab29c04e}" DisplayName="Year" Required="FALSE" Name="Movie_Year" Description="Movie year" Format="Dropdown" />
+      <FieldRef ID="{d08f12fc-bcfd-425e-a325-a15ffcca8394}" DisplayName="Price" Required="FALSE" Name="Movie_Price" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

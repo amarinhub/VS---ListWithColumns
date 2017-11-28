@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="876d5a7b-6a38-498a-8f47-c902b7ef3017" solutionId="876d5a7b-6a38-498a-8f47-c902b7ef3017" resetWebServer="false" sharePointProductVersion="15.0" name="ListWithColumns" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="205132e4-780a-4bf5-a3cb-12ce86e84bbe" />
+    <featureReference itemId="65a90627-ba1e-4653-b4b3-291d52442318" />
+    <featureReference itemId="038fd430-ce9b-406d-a207-1f9e9a40ff4e" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="1c4f75e0-9d32-49fc-8d56-f36ee43a529a" />
+  </projectItems>
+</package>

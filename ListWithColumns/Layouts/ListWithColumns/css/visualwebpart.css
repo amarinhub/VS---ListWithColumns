@@ -1,0 +1,9 @@
+﻿body
+{
+    background-color:black;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}

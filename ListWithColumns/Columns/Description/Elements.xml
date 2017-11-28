@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{fe94a4d0-ab9e-4ad7-be4c-63538a82117b}"
+       Name="Movie_Description"
+       DisplayName="Description"
+       Type="Text"
+       Required="FALSE"
+       Group="Movie Site Columns">
+  </Field>
+</Elements>

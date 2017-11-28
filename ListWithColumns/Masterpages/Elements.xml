@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Masterpages" List="116" Url="_catalogs/masterpage">
+    <File Path="Masterpages\Demo.master" Url="Demo.master" Type="GhostableInLibrary"  ReplaceContent="TRUE"  />
+  </Module>
+</Elements>

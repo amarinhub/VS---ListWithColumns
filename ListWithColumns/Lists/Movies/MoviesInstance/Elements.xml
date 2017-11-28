@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Movies" OnQuickLaunch="TRUE" TemplateType="100" Url="Lists/Movies" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Movie_Name">IronMan</Field>
+          <Field Name="Description">Movie about..</Field>
+          <Field Name="Movie_Price">125</Field>
+          <Field Name="Movie_Category">Action</Field>
+          <Field Name="Movie_Year">2010</Field>
+        </Row>
+        <Row>
+          <Field Name="Movie_Name">Peter Pan</Field>
+          <Field Name="Description">Movie about..</Field>
+          <Field Name="Movie_Price">135</Field>
+          <Field Name="Movie_Category">Action</Field>
+          <Field Name="Movie_Year">2010</Field>
+        </Row>
+        <Row>
+          <Field Name="Movie_Name">Tarzan</Field>
+          <Field Name="Description">Movie about..</Field>
+          <Field Name="Movie_Price">155</Field>
+          <Field Name="Movie_Category">Action</Field>
+          <Field Name="Movie_Year">2010</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>
